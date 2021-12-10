@@ -52,4 +52,4 @@ Feature: Registration for Payback
         Examples:
             | Url                       | EmailErrorMsg                                     | PinErrorMsg                                     | GenderErrorMsg                   | paybackCard          |
             | 'https://www.payback.at/' | Bitte geben Sie Ihre E-Mail-Adresse ein (inkl. @) | Bitte geben Sie einen 4-stelligen (0-9) PIN ein | Bitte wählen Sie eine Anrede aus | 'atBPWelcome'        |
-            #| 'https://www.payback.it/' | Per favore, controlla l'indirizzo e-mail inserito | Per favore, ricontrolla il PIN inserito         | Bitte wählen Sie eine Anrede aus | 'PBOnlRegSingleCard' |
+            | 'https://www.payback.it/' | Per favore, controlla l'indirizzo e-mail inserito | Per favore, ricontrolla il PIN inserito         | Bitte wählen Sie eine Anrede aus | 'PBOnlRegSingleCard' |
