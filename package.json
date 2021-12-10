@@ -1,0 +1,26 @@
+{
+  "name": "payback",
+  "version": "1.0.0",
+  "description": "Task",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:clean && tsc -p tsconfig.json",
+    "build:clean": "rm -rf transpiled && mkdir transpiled",
+    "test": "npm run build && protractor transpiled/conf.js",
+    "clear": "rm -rf node_modules",
+    "wdupdate": "webdriver-manager update"
+  },
+  "author": "Abhishek",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "eslint-plugin-protractor": "^2.1.1",
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@types/node": "^16.11.11",
+    "protractor-cucumber-framework": "^8.2.8"
+  }
+}
